@@ -203,6 +203,10 @@
     background-size: cover;
     background-position: center;
 
+    @media(max-width:426px) {
+        background-image: url("../../DATA/img/banner-photo-33.jpg");
+    }
+
     .headerContent {
         margin-left: 28px;
         width: 530px;

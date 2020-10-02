@@ -2,11 +2,10 @@
     font-family: 'Open-sans';
     src: url(1b0809d519837cb7aad36a73433f655c.ttf) format("truetype");
 }
-body {
-  font-family: "Open-sans", sans-serif;
-  margin: 0;
+@font-face{
+    font-family: 'Open-sans';
+    src: url(1b0809d519837cb7aad36a73433f655c.ttf) format("truetype");
 }
-
 .header {
   position: fixed;
   top: 0;
@@ -24,14 +23,6 @@ body {
   height: 100%;
   background-color: white;
   z-index: 2;
-}
-
-.container {
-  max-width: 1170px;
-  min-width: 360px;
-  padding: 0;
-  margin: 0 auto;
-  border: 1px solid transparent;
 }
 
 .headerBody {
@@ -86,11 +77,6 @@ body {
 
 .headerBurger {
   display: none;
-}
-
-.content {
-  padding-top: 60px;
-  position: relative;
 }
 
 @media (max-width: 769px) {
@@ -483,4 +469,17 @@ body {
 }
 .registerContainer .row {
   margin: 0;
+}
+
+body {
+  font-family: "Open-sans", sans-serif;
+  margin: 0;
+}
+
+.container {
+  max-width: 1170px;
+  min-width: 360px;
+  padding: 0;
+  margin: 0 auto;
+  border: 1px solid transparent;
 }

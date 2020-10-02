@@ -1,0 +1,72 @@
+.registerContainer {
+    padding-top: 60px;
+    text-align: center;
+    margin: 0 auto;
+
+    .formContainer {
+        margin: 0 auto;
+        text-align: left;
+
+        #notice {
+            font-size: 12px;
+            line-height: 14px;
+        }
+
+        fieldset {
+            margin-bottom: 40px;
+
+            p {
+                margin: 0;
+                padding-bottom: 10px;
+
+            }
+
+            .col-sm-10 {
+                padding-left: 15px;
+                padding-bottom: 40px;
+            }
+
+            .custom-file {
+                position: relative;
+                margin-left: 15px;
+
+                p {
+                    position: absolute;
+                    z-index: 3;
+                    top: -30px;
+                    left: 0;
+                }
+            }
+        }
+
+        .col-sm-10 {
+            padding-left: 0;
+        }
+
+        .btnContainer {
+            text-align: center;
+            margin-bottom: 20px;
+
+            .btn {
+                background-color: $primColor;
+                border-color: $btnColorHover;
+            }
+
+            .btn:hover {
+                background-color: $btnColorHover;
+                border-color: $primColor;
+            }
+        }
+
+        @media (max-width:426px) {
+            padding: 0 10px;
+        }
+
+        @media (max-width:1025px) {
+            padding: 0 10px;
+        }
+    }
+    .row {
+        margin: 0;
+    }
+}

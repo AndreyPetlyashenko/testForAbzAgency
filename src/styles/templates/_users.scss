@@ -1,0 +1,94 @@
+.usersContainer {
+    background-color: $secondBackColor;
+    text-align: center;
+
+    .headOfUsers {
+        text-align: center;
+
+        .usersTitle {
+            padding: 155px 0 30px 0;
+            margin: 0;
+        }
+
+        .usersAtention {
+            margin: 0;
+            padding-bottom: 40px;
+        }
+
+        @media (max-width:426px) {
+            .usersTitle {
+                padding: 80px 0 15px 0;
+                margin: 0;
+            }
+
+            .usersAtention {
+                padding-bottom: 30px;
+            }
+        }
+    }
+
+    #users {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 80px;
+
+        @media (max-width:769px) {
+            margin: 0;
+        }
+
+        .card {
+            border: none;
+            width: 200px;
+            text-align: center;
+            margin: 20px 65px;
+            background-color: $secondBackColor;
+
+            @media (max-width:1025px) {
+                margin: 20px 10px;
+            }
+
+            @media (max-width:426px) {
+                margin: 0 auto;
+            }
+
+            img {
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                margin: 0 auto;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 24px;
+                margin: 0;
+                padding: 6px 0;
+            }
+
+            .userName {
+                padding-bottom: 17px;
+                padding-top: 20px;
+                margin: 0;
+            }
+
+            .smallName {
+                padding-bottom: 21px;
+                word-wrap: none;
+            }
+        }
+    }
+
+    button {
+        margin: 20px auto;
+        color: white;
+        width: 210px;
+        height: 38px;
+        background-color: $primColor;
+        border: none;
+    }
+
+    button:active {
+        background-color: $secondColor;
+    }
+}

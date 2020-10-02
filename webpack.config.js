@@ -66,10 +66,7 @@ module.exports={
     },
     plugins:[
         new HTMLWebpackPlugin({
-           template: 'index.html' ,
-        //    minify: {
-        //         collapseWhitespace: isProd
-        //     }
+           template: 'index.html' 
         }),
         new CleanWebpackPlugin(),
         new MINICSSExtractPlugin({

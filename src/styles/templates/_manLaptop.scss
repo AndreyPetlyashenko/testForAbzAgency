@@ -2,8 +2,12 @@
     font-size: 50px;
     line-height: 54px;
     text-align: center;
-    padding-top: 70px;
+    padding-top: 149px;
     padding-left: 10px;
+
+    span {
+        padding-right: 1px;
+    }
 
     @media (max-width:426px) {
         font-size: 30px;
@@ -17,19 +21,25 @@
 
 .contentContainer {
 
-    padding: 58px 0px 120px 50px;
+    padding: 61px 0px 14px 55px;
     display: flex;
     flex-wrap: nowrap;
 
+    .secondTitle {
+        font-size: 24px;
+        margin-bottom: 18px;
+    }
+
     .svgLaptop {
-        width: 27%;
+        width: 35%;
     }
 
 
 }
+
 @media (max-width:769px) {
     .contentContainer {
-        
+
         padding: 20px 0px 60px 25px;
         margin: 0 auto;
 
@@ -52,20 +62,37 @@
             width: 90%;
             text-align: center;
             margin: 30px auto;
-            padding:0;
+            padding: 0;
         }
     }
 
 }
 
 .textContainer {
-    padding: 0px 90px 10px 50px;
+    padding: 0px 0px 10px 44px;
+    margin: 0px 0 0 4px;
 
-    p {
-        font-size: 16px;
-        line-height: 24px;
-        padding-top: 10px;
+
+    .firstPar {
+        margin-bottom: 25px;
+        span{
+            word-spacing: 2px;
+        }
+        
     }
+
+    .secondPar {
+        span{
+            word-spacing: 9px;
+        }
+        margin-bottom: 29px;
+
+    }
+
+    font-size: 16px;
+    line-height: 24px;
+
+
 
     a {
         text-decoration: none;
@@ -79,10 +106,12 @@
 
     @media (max-width:769px) {
         padding: 0 30px;
+
         .secondTitle {
             font-size: 24px;
             line-height: 29px;
         }
+
         p {
             text-align: left;
             padding: 0 10px;

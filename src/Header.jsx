@@ -42,7 +42,7 @@ export default class Header extends React.Component {
                         <div className="headerBody">
                             <a href="#" className="logoHeader">
                                 <img src="../DATA/img/favicon-32x32.png" alt="" />
-                                <span>TEST TASK</span>
+                                <span>TESTTASK</span>
                             </a>
                             <div className={"headerBurger " + this.state.active} onClick={this.showMobileMenu}>
                                 <span></span>
@@ -53,7 +53,7 @@ export default class Header extends React.Component {
                                     <li><a href="#registration" className="headerItem">Relationships</a></li>
                                     <li><a href="#registration" className="headerItem">Requirements</a></li>
                                     <li><a href="#registration" className="headerItem">Users</a></li>
-                                    <li><a href="#registration" className="headerItem">Sign up</a></li>
+                                    <li><a href="#registration" className="headerItem">Sign Up</a></li>
                                     {
                                         this.state.active &&
                                         <div>
@@ -70,7 +70,7 @@ export default class Header extends React.Component {
                     <div className="newContainer">
                         <div className="mainImgContainer">
                             <div className="headerContent">
-                                <h1 className="mainTitle">test assignment for frontend developer position</h1>
+                                <h1 className="mainTitle">test assignment for frontend <span>developer position</span></h1>
                                 <p className="headerParagraph">
                                     <span>We kindly remind you that your test assignment should be submitted
                                 as a link to github/bitbucket repository.</span>

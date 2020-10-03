@@ -111,7 +111,8 @@ export default class Register extends React.Component {
                                 </div>
                             </div>
                             <fieldset className="form-group">
-                                <p>Select your position</p>
+                                <label htmlFor="">Select your position</label>
+                                 
                                 <div className="row">
                                     <div className="col-sm-10">
                                         <div className="form-check">
@@ -161,7 +162,7 @@ export default class Register extends React.Component {
                                     <div className="custom-file">
                                         <p>Photo</p>
                                         <input type="file" className="custom-file-input" id="customFile" name="img" ref={this.fileInput} />
-                                        <label className="custom-file-label" htmlFor="customFile">Choose file</label>
+                                        <label className="custom-file-label" htmlFor="customFile">Upload your photo</label>
                                     </div> 
                                 </div>
                             </fieldset>

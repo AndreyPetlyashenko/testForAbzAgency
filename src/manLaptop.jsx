@@ -10,7 +10,9 @@ export default class ManLaptop extends React.Component {
             <div className="container">
                 <div className="manLaptopContainer">
                     <h2 className="titleLaptop">
-                        Let's get acquainted
+                        
+                        
+                        Let's get acqu<span>ainted</span>
                     </h2>
                     <div className="contentContainer">
                         <img className="svgLaptop" src="../DATA/img/man-laptop-v1.svg" alt="laptop-man" />
@@ -18,13 +20,13 @@ export default class ManLaptop extends React.Component {
                             <h2 className="secondTitle">
                                 I am cool frontend developer
                             </h2>
-                            <p>
-                                We will evaluate how clean your approach to writing CSS
+                            <p className="firstPar">
+                                <span>We will evaluate how clean your approach to writing CSS </span> 
                                 and javascript  code is. You can use any CSS and javascript
                                 3rd party libraries without any restriction.
                             </p>
-                            <p>
-                                If 3rd party css/javascript libraries are added to the project via bower/npm/yarn you
+                            <p className="secondPar">
+                                <span>If 3rd party css/javascript libraries are added to the project via</span> bower/npm/yarn you
                                 will get bonus points. If you use any task runner (gulp/webpack) you will get bonus as well.
                                 Slice servise directory page PSD mockup into HTML5/CSS3.
                             </p>

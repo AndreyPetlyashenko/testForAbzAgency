@@ -1,9 +1,4 @@
 import React from "react"
-import "./babel"
-import "./styles/fonts/OpenSans-Regular.ttf"
-import "bootstrap/dist/css/bootstrap.min.css"
-
-
 
 export default class Users extends React.Component {
     constructor(props) {

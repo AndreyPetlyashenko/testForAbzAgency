@@ -1,7 +1,5 @@
 import React from "react"
-import "./babel"
 
-import "bootstrap/dist/css/bootstrap.min.css"
 
 
 export default class Register extends React.Component {

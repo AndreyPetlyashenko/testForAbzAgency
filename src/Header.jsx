@@ -1,8 +1,8 @@
-import React from 'react'
-import './babel'
-import 'bootstrap/dist/css/bootstrap.min.css'
+import React from "react"
+import { connect } from "react-redux"
+import { toggleMenu } from "./redux/actions"
 
-export default class Header extends React.Component {
+class Header extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -11,11 +11,14 @@ export default class Header extends React.Component {
         }
     }
     showMobileMenu = async () => {
+
         await this.setState(
             {
                 active: !this.state.active,
                 lock: !this.state.lock
             })
+
+        this.props.toggleMenu() // 
 
         if (this.state.lock) {
             document.body.style.overflow = "hidden";
@@ -31,7 +34,7 @@ export default class Header extends React.Component {
 
         additionalItems = additionalItems.map((item) => {
             let result;
-            item === "<hr />" ? result = <hr /> : result = <li><a href="#registration" className="headerItem">{item}</a></li>
+            item === "<hr />" ? result = <hr key ={item}/> : result = <li key={item}><a href="#registration" className="headerItem">{item}</a></li>
             return result
         })
 
@@ -79,7 +82,7 @@ export default class Header extends React.Component {
                                 we look forward to your submisson. Good luck! The photo has to scale
                                 in the banner area on the different screens
                             </p>
-                                <a  href="#registration" className="btn btn-danger">Sing up now</a>
+                                <a href="#registration" className="btn btn-danger">Sing up now</a>
                             </div>
 
                         </div>
@@ -93,3 +96,12 @@ export default class Header extends React.Component {
         )
     }
 }
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        toggleMenu: () => {
+            dispatch(toggleMenu())
+        }
+    }
+}
+export default connect(null, mapDispatchToProps)(Header)

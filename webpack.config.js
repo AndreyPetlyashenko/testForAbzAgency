@@ -4,8 +4,6 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MINICSSExtractPlugin= require('mini-css-extract-plugin');
 const { clear } = require('console');
 
-// const isDev= process.env.NODE_ENV === 'development'
-// const isProd= !isDev
 
 
 const preProcess=(extra)=>{

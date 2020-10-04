@@ -157,8 +157,6 @@ export default class Register extends React.Component {
                                         </div>
 
                                     </div>
-
-
                                     <div className="custom-file">
                                         <p>Photo</p>
                                         <input type="file" className="custom-file-input" id="customFile" name="img" ref={this.fileInput} />

@@ -183,7 +183,7 @@
     }
 
     .headerMenu.true {
-        transform: translateX(-3%);
+        transform: translateX(-6%);
     }
 
     .content {
@@ -196,11 +196,9 @@
 }
 
 @media(max-width:426px) {
-
     .newContainer {
         padding-top: 40px;
     }
-
 }
 
 .mainImgContainer {
@@ -285,6 +283,6 @@
     }
 
     .headerMenu.true {
-        transform: translateX(-6%);
+        transform: translateX(-11%);
     }
 }
